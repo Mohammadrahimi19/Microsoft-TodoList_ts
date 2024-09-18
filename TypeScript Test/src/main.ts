@@ -1,11 +1,19 @@
 import './assets/Tailwind.css'
+import TodoList from './components/TodoList.vue'
 
-import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas);
+import { createApp } from 'vue'
+const app = createApp(App)
+app.component('TodoList',TodoList)
+app.component('FontAwesomeIcon',FontAwesomeIcon)
 app.use(router)
 
 app.mount('#app')

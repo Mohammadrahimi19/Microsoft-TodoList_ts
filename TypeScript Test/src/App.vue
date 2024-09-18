@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import TodoList from './components/TodoList.vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 </script>
 
 <template>
   <header>
    <TodoList />
+   <FontAwesomeIcon :icon="[]" />
   </header>
 
 </template>
