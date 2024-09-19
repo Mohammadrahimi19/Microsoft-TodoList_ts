@@ -1,0 +1,35 @@
+// {
+//   "extends": "@tsconfig/node20/tsconfig.json",
+//   "include": [
+//     "vite.config.*",
+//     "vitest.config.*",
+//     "cypress.config.*",
+//     "nightwatch.conf.*",
+//     "playwright.config.*"
+//   ],
+//   "compilerOptions": {
+//     "composite": true,
+//     "noEmit": true,
+//     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+//     "module": "ESNext",
+//     "moduleResolution": "Bundler",
+//     "types": ["node"]
+//   }
+// }
+
+
+{
+  "compilerOptions": {
+    "target": "ES2019", // or another appropriate version
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist", // Specify the output directory for compiled files
+    "rootDir": "./src"  // Specify the root directory of your TypeScript files
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
