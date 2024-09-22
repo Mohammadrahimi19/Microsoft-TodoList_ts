@@ -17,6 +17,9 @@ export default {
         '3xl': '1536px',
       }
     },
+    fontFamily:{
+      'vazir':'Vazir'
+    }
   },
   plugins: [
     // eslint-disable-next-line no-undef

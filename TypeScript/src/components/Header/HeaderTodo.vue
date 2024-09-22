@@ -1,7 +1,7 @@
 <template>
-  <div class="reactive flex flex-row justify-between px-32 w-full items-end p-6" dir="rtl">
+  <div class="reactive flex flex-row justify-between px-32 w-full items-end p-6 " dir="rtl">
     <div class="flex flex-col gap-5 text-5xl text-white">
-      <p class="Data">عصر بخیر  محمد</p>
+      <p class="Data font-bold">عصر بخیر </p>
       <p class="Time drop-shadow-lg shadow-2xl ">
         <!-- {{ dayOfWeek }} {{ day }}- {{ month }} {{ year }} -->
           {{ formattedDate }} - {{ YaerNow }}
@@ -49,22 +49,15 @@ const YaerNow:string = YaerFormater.format(currentDate)
 console.log(formattedDate); 
 
 
-// const daysOfWeek = ['یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه', 'شنبه']
-// const months = [
-//   'فروردین',
-//   'اردیبهشت',
-//   'خرداد',
-//   'تیر',
-//   'مرداد',
-//   'شهریور',
-//   'مهر',
-//   'آبان',
-//   'آذر',
-//   'دی',
-//   'بهمن',
-//   'اسفند'
-// ]
 
 </script>
 
-<style></style>
+<style>
+@font-face {
+  font-family: Vazir;
+  src: url('../../assets/vazir-font/Vazir.woff2');
+}
+*{
+  font-family: Vazir;
+}
+</style>
